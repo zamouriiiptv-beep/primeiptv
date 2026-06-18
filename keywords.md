@@ -113,21 +113,16 @@
 - prime iptv now (12)
 
 ### 🔥 Google Trends (GB + US) - June 2026
-| Keyword | GB Rise | US Rise | Priority |
-|---------|---------|---------|----------|
-| world cup 2026 | +1,200% | +1,000% | ⭐⭐⭐ |
-| fifa world cup 2026 | +1,250% | +1,000% | ⭐⭐⭐ |
-| fifa world cup | +700% | +700% | ⭐⭐⭐ |
-| world cup schedule 2026 | +250% | +200% | ⭐⭐⭐ |
-| world cup fixtures | +500% | — | ⭐⭐ |
-| world cup live streaming | +400% | +550% | ⭐⭐⭐ |
-| watch world cup 2026 live | — | — | ⭐⭐⭐ |
-| world cup iptv | — | — | ⭐⭐⭐ |
-| world cup 2026 iptv | — | — | ⭐⭐⭐ |
-| stream world cup online | — | — | ⭐⭐ |
-
-> استخدام مقترح: دمج كلمات World Cup مع IPTV في عناوين وأوصاف صفحة EN
-> مثال: "Watch FIFA World Cup 2026 Live – Prime IPTV Streaming"
+- live iptv streaming
+- watch live tv online
+- iptv subscription usa
+- iptv subscription uk
+- best iptv service
+- iptv 4k streaming
+- iptv channels usa
+- iptv uk channels
+- stream sports live online
+- best iptv for firestick
 
 ---
 
