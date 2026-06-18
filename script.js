@@ -392,24 +392,6 @@ document.querySelectorAll(".faq-btn").forEach((btn) => {
   revealPricingCards();
 
 
-  /* 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨 */
-  /* 💳 سكريبت قسم طرق الدفع (Payment Methods Carousel) */
-  /* 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨 */
-
-  const box = document.getElementById("cardsContainer");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
-
-  if (box && prevBtn && nextBtn) {
-    prevBtn.addEventListener("click", () => {
-      box.scrollBy({ left: -160, behavior: "smooth" });
-    });
-
-    nextBtn.addEventListener("click", () => {
-      box.scrollBy({ left: 160, behavior: "smooth" });
-    });
-  }
-  /* 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 */
   /* ⭐ نهاية سكريبت قسم طرق الدفع ⭐ */
   /* 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 */
   /* ========================================================= */
