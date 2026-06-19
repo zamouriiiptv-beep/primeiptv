@@ -1,208 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ===== الصفحة الرئيسية ===== -->
+  <!-- ===== الصفحات الرئيسية (4) ===== -->
   <url>
     <loc>https://primeiptvplus.com/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/english/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/"/>
   </url>
 
-  <!-- ===== الصفحات الرئيسية بكل لغة ===== -->
   <url>
     <loc>https://primeiptvplus.com/english/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/fr/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/es/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- ===== صفحات الدول - فرنسي ===== -->
-  <url>
-    <loc>https://primeiptvplus.com/fr/france/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/fr/belgique/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/fr/canada/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ===== صفحات الدول - إنجليزي ===== -->
-  <url>
-    <loc>https://primeiptvplus.com/english/usa/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/english/uk/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/english/canada/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ===== صفحات الدول - إسباني ===== -->
-  <url>
-    <loc>https://primeiptvplus.com/es/espana/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/es/mexico/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/es/argentina/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ===== أدلة الاستخدام ===== -->
+  <!-- ===== أدلة الاستخدام (4) ===== -->
   <url>
     <loc>https://primeiptvplus.com/guide/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/english/guide/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/fr/guide/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/es/guide/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== أدلة عربية متخصصة ===== -->
+  <!-- ===== الصفحات الفرعية العربية — المناطق (3) ===== -->
   <url>
     <loc>https://primeiptvplus.com/guide/maghreb/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/guide/mashriq/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/guide/khalij/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- ===== سياسة الخصوصية وشروط الخدمة ===== -->
+  <!-- ===== الصفحات الفرعية الإنجليزية — الدول (3) ===== -->
+  <url>
+    <loc>https://primeiptvplus.com/english/usa/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/english/uk/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/english/canada/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== الصفحات الفرعية الفرنسية — الدول (3) ===== -->
+  <url>
+    <loc>https://primeiptvplus.com/fr/france/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/fr/belgique/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/fr/canada/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== الصفحات الفرعية الإسبانية — الدول (3) ===== -->
+  <url>
+    <loc>https://primeiptvplus.com/es/espana/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/es/mexico/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/es/argentina/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== سياسة الخصوصية وشروط الخدمة (الجذر فقط) ===== -->
   <url>
     <loc>https://primeiptvplus.com/privacy-policy/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/terms-of-service/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/english/privacy-policy/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/english/terms-of-service/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/fr/privacy-policy/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/fr/terms-of-service/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/es/privacy-policy/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/es/terms-of-service/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
