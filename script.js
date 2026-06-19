@@ -142,12 +142,12 @@ const currentFlag = document.getElementById("current-flag");
 /* ===================== */
 (() => {
   const path = window.location.pathname;
-  let lang = "ar";
+  let lang = "en"; // default: root = English
 
-  if (path.startsWith("/english/")) lang = "en";
-  else if (path.startsWith("/fr/")) lang = "fr";
-  else if (path.startsWith("/es/")) lang = "es";
-  else lang = "ar";
+  if (path.startsWith("/ar/"))   lang = "ar";
+  else if (path.startsWith("/fr/"))   lang = "fr";
+  else if (path.startsWith("/es/"))   lang = "es";
+  // else: /, /usa/, /uk/, /canada/, /guide/, /english/ → en
 
   document.documentElement.lang = lang;
   localStorage.setItem("site_lang", lang);
@@ -186,30 +186,36 @@ document.querySelectorAll(".lang-option").forEach(option => {
     const path = window.location.pathname;
 
     const langMap = {
-      // الإنجليزية
-      "english/usa":      { ar: "/ar/mashriq/", en: "/english/usa/",     fr: "/fr/france/",   es: "/es/espana/" },
-      "english/uk":       { ar: "/ar/mashriq/", en: "/english/uk/",      fr: "/fr/belgique/", es: "/es/espana/" },
-      "english/canada":   { ar: "/",            en: "/english/canada/",  fr: "/fr/canada/",   es: "/es/canada/" },
+      // الإنجليزية — sub-pages at root level
+      "usa":        { ar: "/ar/",          en: "/usa/",      fr: "/fr/",          es: "/es/" },
+      "uk":         { ar: "/ar/",          en: "/uk/",       fr: "/fr/belgique/", es: "/es/" },
+      "canada":     { ar: "/ar/",          en: "/canada/",   fr: "/fr/canada/",   es: "/es/" },
 
       // الفرنسية
-      "fr/france":   { ar: "/ar/maghreb/", en: "/english/uk/",      fr: "/fr/france/",   es: "/es/espana/" },
-      "fr/belgique": { ar: "/ar/maghreb/", en: "/english/uk/",      fr: "/fr/belgique/", es: "/es/espana/" },
-      "fr/canada":   { ar: "/",            en: "/english/canada/",  fr: "/fr/canada/",   es: "/es/canada/" },
+      "fr/france":   { ar: "/ar/",          en: "/uk/",       fr: "/fr/france/",   es: "/es/espana/" },
+      "fr/belgique": { ar: "/ar/",          en: "/uk/",       fr: "/fr/belgique/", es: "/es/espana/" },
+      "fr/canada":   { ar: "/ar/",          en: "/canada/",   fr: "/fr/canada/",   es: "/es/" },
 
-      // العربية
-      "ar/khalij":   { ar: "/ar/khalij/",  en: "/english/",         fr: "/fr/",          es: "/es/" },
-      "ar/maghreb":  { ar: "/ar/maghreb/", en: "/english/",         fr: "/fr/france/",   es: "/es/" },
-      "ar/mashriq":  { ar: "/ar/mashriq/", en: "/english/",         fr: "/fr/",          es: "/es/" },
+      // الإسبانية
+      "es/espana":   { ar: "/ar/",          en: "/uk/",       fr: "/fr/france/",   es: "/es/espana/" },
+      "es/mexico":   { ar: "/ar/",          en: "/usa/",      fr: "/fr/",          es: "/es/mexico/" },
+      "es/argentina":{ ar: "/ar/",          en: "/usa/",      fr: "/fr/",          es: "/es/argentina/" },
+
+      // العربية المناطقية (الأدلة)
+      "ar/guide/khalij":  { ar: "/ar/guide/khalij/",  en: "/",   fr: "/fr/",          es: "/es/" },
+      "ar/guide/maghreb": { ar: "/ar/guide/maghreb/", en: "/",   fr: "/fr/france/",   es: "/es/" },
+      "ar/guide/mashriq": { ar: "/ar/guide/mashriq/", en: "/",   fr: "/fr/",          es: "/es/" },
 
       // الأدلة
-      "english/guide":    { ar: "/guide/",      en: "/english/guide/",   fr: "/fr/guide/",    es: "/es/guide/" },
-      "fr/guide":    { ar: "/guide/",      en: "/english/guide/",   fr: "/fr/guide/",    es: "/es/guide/" },
-      "guide":       { ar: "/guide/",      en: "/english/guide/",   fr: "/fr/guide/",    es: "/es/guide/" },
+      "ar/guide":    { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
+      "fr/guide":    { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
+      "es/guide":    { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
+      "guide":       { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
 
       // الرئيسية
-      "en":          { ar: "/",            en: "/english/",         fr: "/fr/",          es: "/es/" },
-      "fr":          { ar: "/",            en: "/english/",         fr: "/fr/",          es: "/es/" },
-      "es":          { ar: "/",            en: "/english/",         fr: "/fr/",          es: "/es/" },
+      "ar":          { ar: "/ar/",          en: "/",           fr: "/fr/",          es: "/es/" },
+      "fr":          { ar: "/ar/",          en: "/",           fr: "/fr/",          es: "/es/" },
+      "es":          { ar: "/ar/",          en: "/",           fr: "/fr/",          es: "/es/" },
     };
 
     let target = null;
@@ -222,8 +228,8 @@ document.querySelectorAll(".lang-option").forEach(option => {
     }
 
     if (!target) {
-      if (selectedLang === "ar") target = "/";
-      else if (selectedLang === "en") target = "/english/";
+      if (selectedLang === "ar")      target = "/ar/";
+      else if (selectedLang === "en") target = "/";
       else if (selectedLang === "fr") target = "/fr/";
       else if (selectedLang === "es") target = "/es/";
     }
