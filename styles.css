@@ -1964,3 +1964,43 @@ div:has(> #price-val-premium) span,
 div:has(> #price-val-pro)     span {
   color: #ffffff !important;
 }
+
+/* ================================================
+   📱 MOBILE TITLE WRAPPING FIX
+   Root cause: white-space:nowrap + overflow:hidden
+   + text-overflow:ellipsis set in earlier blocks
+   caused long titles to be clipped with "..." on
+   320–430px screens across all language pages.
+   This block overrides all of the above.
+   ================================================ */
+
+/* Override nowrap & overflow lock on title-line-1 */
+.section-title-unified .title-line-1 {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: break-word;
+}
+
+/* Override nowrap on title-line-2 */
+.section-title-unified .title-line-2 {
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+/* Extra font reduction for very small phones (≤360px) */
+@media (max-width: 360px) {
+  .section-title-unified .title-line-1 {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+  .section-title-unified .title-line-2 {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+  }
+}
+
+/* ================================================
+   ⭐ نهاية إصلاح عناوين الموبايل ⭐
+   ================================================ */
