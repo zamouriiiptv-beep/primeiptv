@@ -97,38 +97,10 @@ a.button {
 /* 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨 */
 :root {
 
-  /* 🎯 الألوان الأساسية */
+  /* 🎯 الألوان الأساسية — 3 used, rest removed (dead code) */
   --prime-purple: #5B16A3;
   --prime-purple-light: #7A3CEB;
-  --prime-purple-soft: #9C77FF;
   --prime-blue: #2563EB;
-
-  /* 🎨 التدرج الرسمي */
-  --gradient-prime: linear-gradient(
-    135deg,
-    var(--prime-purple),
-    var(--prime-purple-light),
-    var(--prime-blue)
-  );
-
-  /* 🖤 ألوان النص */
-  --text-main: #111827;
-  --text-muted: #6B7280;
-  --text-light: #F9FAFB;
-
-  /* 🌫️ الخلفيات */
-  --bg-white: #ffffff;
-  --bg-light: #F9FAFB;
-  --bg-dark: #0F172A;
-
-  /* ✨ الزوايا */
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
-
-  /* 🌑 الظلال */
-  --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
-  --shadow-strong: 0 10px 30px rgba(0,0,0,0.18);
 }
 /* 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 */
 /* ⭐⭐ نهاية قسم الألوان والمتغيرات ⭐⭐ */
@@ -1295,7 +1267,23 @@ footer .border-t {
 
   font-family: 'Cairo', sans-serif;
   font-weight: 900;
-  direction: rtl;
+  direction: rtl; /* default RTL for AR pages */
+}
+
+/* LTR override: prevent RTL on EN / FR / ES pages */
+html[dir="ltr"] .section-title-unified,
+html[lang="en"] .section-title-unified,
+html[lang="en-GB"] .section-title-unified,
+html[lang="en-CA"] .section-title-unified,
+html[lang="fr"] .section-title-unified,
+html[lang="fr-FR"] .section-title-unified,
+html[lang="fr-BE"] .section-title-unified,
+html[lang="fr-CA"] .section-title-unified,
+html[lang="es"] .section-title-unified,
+html[lang="es-ES"] .section-title-unified,
+html[lang="es-MX"] .section-title-unified,
+html[lang="es-AR"] .section-title-unified {
+  direction: ltr;
 }
 
 /* 🔒 السطر الأول — مقفول على سطر واحد */
