@@ -147,7 +147,7 @@ const currentFlag = document.getElementById("current-flag");
   if (path.startsWith("/ar/"))   lang = "ar";
   else if (path.startsWith("/fr/"))   lang = "fr";
   else if (path.startsWith("/es/"))   lang = "es";
-  // else: /, /usa/, /uk/, /canada/, /guide/, /english/ → en
+  // else: /, /guide/usa/, /guide/uk/, /guide/canada/, /guide/ → en
 
   document.documentElement.lang = lang;
   localStorage.setItem("site_lang", lang);
@@ -194,19 +194,19 @@ document.querySelectorAll(".lang-option").forEach(option => {
 
     const langMap = {
       // الإنجليزية — sub-pages at root level
-      "usa":        { ar: "/ar/",          en: "/usa/",      fr: "/fr/",          es: "/es/" },
-      "uk":         { ar: "/ar/",          en: "/uk/",       fr: "/fr/belgique/", es: "/es/" },
-      "canada":     { ar: "/ar/",          en: "/canada/",   fr: "/fr/canada/",   es: "/es/" },
+      "guide/usa":  { ar: "/ar/",          en: "/guide/usa/",  fr: "/fr/",          es: "/es/" },
+      "guide/uk":   { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/belgique/", es: "/es/" },
+      "guide/canada":{ ar: "/ar/",         en: "/guide/canada/",fr: "/fr/canada/",   es: "/es/" },
 
       // الفرنسية
-      "fr/france":   { ar: "/ar/",          en: "/uk/",       fr: "/fr/france/",   es: "/es/espana/" },
-      "fr/belgique": { ar: "/ar/",          en: "/uk/",       fr: "/fr/belgique/", es: "/es/espana/" },
-      "fr/canada":   { ar: "/ar/",          en: "/canada/",   fr: "/fr/canada/",   es: "/es/" },
+      "fr/france":   { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/france/",   es: "/es/espana/" },
+      "fr/belgique": { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/belgique/", es: "/es/espana/" },
+      "fr/canada":   { ar: "/ar/",          en: "/guide/canada/",fr: "/fr/canada/",   es: "/es/" },
 
       // الإسبانية
-      "es/espana":   { ar: "/ar/",          en: "/uk/",       fr: "/fr/france/",   es: "/es/espana/" },
-      "es/mexico":   { ar: "/ar/",          en: "/usa/",      fr: "/fr/",          es: "/es/mexico/" },
-      "es/argentina":{ ar: "/ar/",          en: "/usa/",      fr: "/fr/",          es: "/es/argentina/" },
+      "es/espana":   { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/france/",   es: "/es/espana/" },
+      "es/mexico":   { ar: "/ar/",          en: "/guide/usa/",   fr: "/fr/",          es: "/es/mexico/" },
+      "es/argentina":{ ar: "/ar/",          en: "/guide/usa/",   fr: "/fr/",          es: "/es/argentina/" },
 
       // العربية المناطقية (الأدلة)
       "ar/guide/khalij":  { ar: "/ar/guide/khalij/",  en: "/",   fr: "/fr/",          es: "/es/" },
