@@ -171,6 +171,13 @@ if (langBtn && langDropdown) {
     langDropdown.classList.toggle("hidden");
     langDropdown.classList.toggle("show");
   });
+  langBtn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      langDropdown.classList.toggle("hidden");
+      langDropdown.classList.toggle("show");
+    }
+  });
 }
 
 /* ===================== */

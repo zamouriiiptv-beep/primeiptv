@@ -43,7 +43,7 @@
 <link rel="stylesheet" href="/css/tailwind.min.css">
 <link rel="stylesheet" href="/styles.css">
 
-<script src="/script.js" defer></script>
+<script src="/script.js?v=2" defer></script>
 
 <style>
   .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; }
@@ -333,7 +333,7 @@
 <!-- Language Bar -->
 <div id="language-bar" dir="ltr">
   <div id="flags-container"><div id="flags-scroll"></div></div>
-  <div class="lang-wrapper" id="lang-btn">
+  <div class="lang-wrapper" id="lang-btn" role="button" tabindex="0" aria-haspopup="listbox">
     <img id="current-flag" class="flag-icon" src="/images/A3lame/flag10.webp" alt="English flag">
     <span id="current-lang">EN</span>
     <div id="lang-dropdown" class="lang-dropdown hidden">
@@ -871,7 +871,6 @@
 </a>
 
 <link rel="stylesheet" href="/css/footer.css">
-<script src="/js/footer.js" defer></script>
 
 </body>
 </html>

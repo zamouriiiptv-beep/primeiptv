@@ -59,6 +59,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
 <!-- تهيئة DNS للمصادر الخارجية -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
@@ -300,7 +301,7 @@
   </div>
 
   <!-- زر اللغة + القائمة المنسدلة داخله -->
-  <div class="lang-wrapper" id="lang-btn">
+  <div class="lang-wrapper" id="lang-btn" role="button" tabindex="0" aria-haspopup="listbox">
     <img src="/images/A3lame/flag1.webp" class="flag-icon" id="current-flag" alt="Langue actuelle">
     <span id="current-lang"></span>
 
@@ -1308,7 +1309,6 @@ Avis réels confirmant la qualité du service et la satisfaction de nos clients
 <link rel="stylesheet" href="/css/footer.css">
 
 <!-- JavaScript -->
-<script src="/js/footer.js" defer></script>
 
 <script src="/script.js?v=2" defer></script>
 

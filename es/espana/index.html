@@ -34,14 +34,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
   <link rel="preload" href="/styles.css?v=2" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/styles.css?v=2"></noscript>
 
-  <script src="/script.js" defer></script>
+  <script src="/script.js?v=2" defer></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -267,7 +268,7 @@
   <div id="flags-container">
     <div id="flags-scroll"></div>
   </div>
-  <div class="lang-wrapper" id="lang-btn">
+  <div class="lang-wrapper" id="lang-btn" role="button" tabindex="0" aria-haspopup="listbox">
     <img src="/images/A3lame/flag3.webp" class="flag-icon" id="current-flag" alt="Español" loading="lazy">
     <span id="current-lang">ES</span>
     <div id="lang-dropdown" class="lang-dropdown hidden">
@@ -1046,7 +1047,6 @@
 </a>
 
 <link rel="stylesheet" href="/css/footer.css">
-<script src="/js/footer.js" defer></script>
 
 </body>
 </html>
