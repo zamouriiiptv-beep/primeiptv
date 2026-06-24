@@ -280,8 +280,17 @@ document.addEventListener("click", () => {
   /* =================== أكورديون الخطط ===================== */
   /* ========================================================= */
 
+  const featureLabels = {
+    en: { show: "View Features",            hide: "Hide Features" },
+    fr: { show: "Voir les fonctionnalités", hide: "Masquer les fonctionnalités" },
+    es: { show: "Ver Características",      hide: "Ocultar Características" },
+    ar: { show: "عرض الميزات",             hide: "إخفاء الميزات" },
+  };
+
   document.querySelectorAll(".toggle-features-btn").forEach(button => {
     button.addEventListener("click", () => {
+      const lang = document.documentElement.lang || "ar";
+      const t = featureLabels[lang] || featureLabels.ar;
 
       const card = button.closest(".plan-card");
       const featuresList = card.querySelector(".plan-features");
@@ -301,7 +310,7 @@ document.addEventListener("click", () => {
           otherList.classList.add("hidden");
           otherList.classList.remove("open");
 
-          otherLabel.textContent = "عرض الميزات";
+          otherLabel.textContent = t.show;
           otherArrow.textContent = "🔽";
         }
       });
@@ -309,12 +318,12 @@ document.addEventListener("click", () => {
       if (featuresList.classList.contains("hidden")) {
         featuresList.classList.remove("hidden");
         featuresList.classList.add("open");
-        label.textContent = "إخفاء الميزات";
+        label.textContent = t.hide;
         arrow.textContent = "🔼";
       } else {
         featuresList.classList.remove("open");
         featuresList.classList.add("hidden");
-        label.textContent = "عرض الميزات";
+        label.textContent = t.show;
         arrow.textContent = "🔽";
       }
 
@@ -488,6 +497,8 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- تفعيل الأكورديون (عرض الميزات) بدون حذف أي ميزة --- */
     document.querySelectorAll(".toggle-features-btn").forEach(button => {
         button.addEventListener("click", () => {
+            const lang = document.documentElement.lang || "ar";
+            const t = featureLabels[lang] || featureLabels.ar;
             const card = button.closest(".plan-card");
             const featuresList = card.querySelector(".plan-features");
             const label = button.querySelector("span:not(.plan-arrow)");
@@ -495,11 +506,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (featuresList.classList.contains("hidden")) {
                 featuresList.classList.remove("hidden");
-                label.textContent = "إخفاء الميزات";
+                label.textContent = t.hide;
                 arrow.textContent = "🔼";
             } else {
                 featuresList.classList.add("hidden");
-                label.textContent = "عرض الميزات";
+                label.textContent = t.show;
                 arrow.textContent = "🔽";
             }
         });
