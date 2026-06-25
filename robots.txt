@@ -1,13 +1,6 @@
 User-agent: *
 Allow: /
 
-# Non-existent language paths (external backlinks - 404)
-Disallow: /it/
-Disallow: /pt/
-Disallow: /de/
-Disallow: /tr/
-Disallow: /nl/
-
 # Non-existent legacy pages (external backlinks - 404)
 Disallow: /iptv-guide-ar.html
 Disallow: /best-iptv-usa-guide.html
