@@ -563,10 +563,10 @@ document.addEventListener('click', function (e) {
   if (!link) return;
   console.log('[WA-TRACK] WhatsApp link clicked:', link.href);
   if (typeof gtag === 'function') {
-    gtag('event', 'contact', {
+    gtag('event', 'whatsapp_click', {
       method: 'WhatsApp'
     });
-    console.log('[WA-TRACK] gtag event "contact" sent {method: WhatsApp}');
+    console.log('[WA-TRACK] gtag event "whatsapp_click" sent');
   } else {
     console.warn('[WA-TRACK] gtag NOT found — event "contact" NOT sent');
   }
