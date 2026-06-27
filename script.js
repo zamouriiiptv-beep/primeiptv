@@ -548,3 +548,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 }); // END DOMContentLoaded
+
+
+
+/* ========================================================= */
+/* تتبع النقر على روابط WhatsApp (GA4 event: contact)        */
+/* معالج مركزي واحد عبر Event Delegation                     */
+/* ========================================================= */
+document.addEventListener('click', function (e) {
+  var link = e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  if (!link) return;
+  if (typeof gtag === 'function') {
+    gtag('event', 'contact', {
+      method: 'WhatsApp'
+    });
+  }
+}, true);
