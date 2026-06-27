@@ -555,12 +555,19 @@ document.addEventListener('DOMContentLoaded', () => {
 /* تتبع النقر على روابط WhatsApp (GA4 event: contact)        */
 /* معالج مركزي واحد عبر Event Delegation                     */
 /* ========================================================= */
+console.log('[WA-TRACK] WhatsApp click listener attached (script.js)');
 document.addEventListener('click', function (e) {
-  var link = e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  var el = e.target;
+  if (!el || typeof el.closest !== 'function') return;
+  var link = el.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
   if (!link) return;
+  console.log('[WA-TRACK] WhatsApp link clicked:', link.href);
   if (typeof gtag === 'function') {
     gtag('event', 'contact', {
       method: 'WhatsApp'
     });
+    console.log('[WA-TRACK] gtag event "contact" sent {method: WhatsApp}');
+  } else {
+    console.warn('[WA-TRACK] gtag NOT found — event "contact" NOT sent');
   }
 }, true);
