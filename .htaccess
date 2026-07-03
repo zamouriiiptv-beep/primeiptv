@@ -14,6 +14,7 @@ RewriteRule ^guide/usa(/.*)?$ https://primeiptvplus.com/guide/united-states/ [R=
 RewriteRule ^guide/uk(/.*)?$ https://primeiptvplus.com/guide/united-kingdom/ [R=301,L]
 RewriteRule ^fr/belgique(/.*)?$ https://primeiptvplus.com/fr/iptv-belgique/ [R=301,L]
 RewriteRule ^fr/?$ https://primeiptvplus.com/ [R=301,L]
+RewriteRule ^fr/index\.html$ https://primeiptvplus.com/ [R=301,L]
 
 # 301 Redirects: legacy bare country URLs (discovered by Google, never existed under these paths)
 RewriteRule ^usa(/.*)?$ https://primeiptvplus.com/guide/united-states/ [R=301,L]
