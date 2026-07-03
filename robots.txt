@@ -3,6 +3,8 @@ Allow: /
 
 # Non-existent legacy pages (external backlinks - 404)
 Disallow: /iptv-guide-ar.html
+Disallow: /iptv-guide-en.html
+Disallow: /iptv-guide-fr.html
 Disallow: /best-iptv-usa-guide.html
 
 Sitemap: https://primeiptvplus.com/sitemap.xml
