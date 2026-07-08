@@ -5,36 +5,39 @@
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
+Options -Indexes
+ErrorDocument 404 /404.html
+
 # 301 Redirect: /en and /en/ → /
 RewriteEngine On
 RewriteRule ^en(/.*)?$ https://primeiptvplus.com/ [R=301,L]
 
-# 301 Redirects: renamed pages (old URLs → new URLs)
-RewriteRule ^guide/usa(/.*)?$ https://primeiptvplus.com/guide/united-states/ [R=301,L]
-RewriteRule ^guide/uk(/.*)?$ https://primeiptvplus.com/guide/united-kingdom/ [R=301,L]
-RewriteRule ^fr/belgique(/.*)?$ https://primeiptvplus.com/fr/iptv-belgique/ [R=301,L]
-RewriteRule ^fr/?$ https://primeiptvplus.com/ [R=301,L]
-RewriteRule ^fr/index\.html$ https://primeiptvplus.com/ [R=301,L]
-
-# 301 Redirects: legacy bare country URLs (discovered by Google, never existed under these paths)
+# 301 Redirects: legacy bare country URLs (crawler guesses, never existed, not delisted)
 RewriteRule ^usa(/.*)?$ https://primeiptvplus.com/guide/united-states/ [R=301,L]
 RewriteRule ^uk(/.*)?$ https://primeiptvplus.com/guide/united-kingdom/ [R=301,L]
 RewriteRule ^canada(/.*)?$ https://primeiptvplus.com/guide/iptv-canada/ [R=301,L]
 
-# 301 Redirects: URLs delisted by the July 2 DMCA notice -> fresh paths
-RewriteRule ^ar/?$ https://primeiptvplus.com/ar/home/ [R=301,L]
-RewriteRule ^ar/index\.html$ https://primeiptvplus.com/ar/home/ [R=301,L]
-RewriteRule ^ar/guide/?$ https://primeiptvplus.com/ar/dalil/ [R=301,L]
-RewriteRule ^ar/guide/khalij(/.*)?$ https://primeiptvplus.com/ar/guide/al-khalij/ [R=301,L]
-RewriteRule ^es/?$ https://primeiptvplus.com/es/inicio/ [R=301,L]
-RewriteRule ^es/index\.html$ https://primeiptvplus.com/es/inicio/ [R=301,L]
-RewriteRule ^es/guide(/.*)?$ https://primeiptvplus.com/es/guia/ [R=301,L]
-RewriteRule ^es/espana(/.*)?$ https://primeiptvplus.com/es/iptv-espana/ [R=301,L]
-RewriteRule ^es/mexico(/.*)?$ https://primeiptvplus.com/es/iptv-mexico/ [R=301,L]
-RewriteRule ^es/argentina(/.*)?$ https://primeiptvplus.com/es/iptv-argentina/ [R=301,L]
-RewriteRule ^guide/?$ https://primeiptvplus.com/iptv-guides/ [R=301,L]
-RewriteRule ^guide/index\.html$ https://primeiptvplus.com/iptv-guides/ [R=301,L]
-RewriteRule ^guide/canada(/.*)?$ https://primeiptvplus.com/guide/iptv-canada/ [R=301,L]
-RewriteRule ^fr/guide(/.*)?$ https://primeiptvplus.com/fr/guide-iptv/ [R=301,L]
-RewriteRule ^fr/france(/.*)?$ https://primeiptvplus.com/fr/iptv-france/ [R=301,L]
-RewriteRule ^fr/canada(/.*)?$ https://primeiptvplus.com/fr/iptv-canada/ [R=301,L]
+# DMCA-delisted URLs: hard 404 — no redirects, the replacement pages are
+# fully independent and must never be associated with these dead paths.
+RewriteRule ^fr/?$ - [R=404,L]
+RewriteRule ^fr/index\.html$ - [R=404,L]
+RewriteRule ^fr/belgique(/.*)?$ - [R=404,L]
+RewriteRule ^fr/guide(/.*)?$ - [R=404,L]
+RewriteRule ^fr/france(/.*)?$ - [R=404,L]
+RewriteRule ^fr/canada(/.*)?$ - [R=404,L]
+RewriteRule ^ar/?$ - [R=404,L]
+RewriteRule ^ar/index\.html$ - [R=404,L]
+RewriteRule ^ar/guide/?$ - [R=404,L]
+RewriteRule ^ar/guide/index\.html$ - [R=404,L]
+RewriteRule ^ar/guide/khalij(/.*)?$ - [R=404,L]
+RewriteRule ^es/?$ - [R=404,L]
+RewriteRule ^es/index\.html$ - [R=404,L]
+RewriteRule ^es/guide(/.*)?$ - [R=404,L]
+RewriteRule ^es/espana(/.*)?$ - [R=404,L]
+RewriteRule ^es/mexico(/.*)?$ - [R=404,L]
+RewriteRule ^es/argentina(/.*)?$ - [R=404,L]
+RewriteRule ^guide/?$ - [R=404,L]
+RewriteRule ^guide/index\.html$ - [R=404,L]
+RewriteRule ^guide/usa(/.*)?$ - [R=404,L]
+RewriteRule ^guide/uk(/.*)?$ - [R=404,L]
+RewriteRule ^guide/canada(/.*)?$ - [R=404,L]
