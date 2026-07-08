@@ -209,9 +209,9 @@ document.querySelectorAll(".lang-option").forEach(option => {
       "es/iptv-argentina": { ar: "/ar/iptv-home/", en: "/en/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-argentina/" },
 
       // العربية المناطقية
-      "ar/iptv-gulf":    { ar: "/ar/iptv-gulf/",    en: "/en/iptv-home/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
-      "ar/iptv-morocco": { ar: "/ar/iptv-morocco/", en: "/en/iptv-home/", fr: "/fr/iptv-france/",   es: "/es/iptv-inicio/" },
-      "ar/iptv-mashriq": { ar: "/ar/iptv-mashriq/", en: "/en/iptv-home/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "ar/iptv-gulf":    { ar: "/ar/iptv-gulf/",    en: "/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "ar/iptv-morocco": { ar: "/ar/iptv-morocco/", en: "/", fr: "/fr/iptv-france/",   es: "/es/iptv-inicio/" },
+      "ar/iptv-mashriq": { ar: "/ar/iptv-mashriq/", en: "/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
 
       // الأدلة
       "ar/iptv-guide": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
@@ -223,7 +223,6 @@ document.querySelectorAll(".lang-option").forEach(option => {
       "ar/iptv-home":    { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
       "fr/iptv-accueil": { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
       "es/iptv-inicio":  { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
-      "en/iptv-home":    { ar: "/ar/iptv-home/", en: "/en/iptv-home/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
     };
 
     let target = null;
