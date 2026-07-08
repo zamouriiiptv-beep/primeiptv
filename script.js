@@ -147,7 +147,7 @@ const currentFlag = document.getElementById("current-flag");
   if (path.startsWith("/ar/"))   lang = "ar";
   else if (path.startsWith("/fr/"))   lang = "fr";
   else if (path.startsWith("/es/"))   lang = "es";
-  // else: /, /guide/usa/, /guide/uk/, /guide/canada/, /guide/ → en
+  // else: / and /en/... → en
 
   document.documentElement.lang = lang;
   localStorage.setItem("site_lang", lang);
@@ -193,36 +193,37 @@ document.querySelectorAll(".lang-option").forEach(option => {
     const path = window.location.pathname;
 
     const langMap = {
-      // الإنجليزية — sub-pages at root level
-      "guide/united-states":  { ar: "/ar/home/", en: "/guide/united-states/",  fr: "/fr/accueil/",      es: "/es/inicio/" },
-      "guide/united-kingdom": { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-belgique/", es: "/es/inicio/" },
-      "guide/iptv-canada":    { ar: "/ar/home/", en: "/guide/iptv-canada/",    fr: "/fr/iptv-canada/",   es: "/es/inicio/" },
+      // الإنجليزية
+      "en/iptv-usa":    { ar: "/ar/iptv-home/", en: "/en/iptv-usa/",    fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "en/iptv-uk":     { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",     fr: "/fr/iptv-belgique/", es: "/es/iptv-inicio/" },
+      "en/iptv-canada": { ar: "/ar/iptv-home/", en: "/en/iptv-canada/", fr: "/fr/iptv-canada/",   es: "/es/iptv-inicio/" },
 
       // الفرنسية
-      "fr/iptv-france":   { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-france/",   es: "/es/iptv-espana/" },
-      "fr/iptv-belgique": { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-belgique/", es: "/es/iptv-espana/" },
-      "fr/iptv-canada":   { ar: "/ar/home/", en: "/guide/iptv-canada/",    fr: "/fr/iptv-canada/",   es: "/es/inicio/" },
+      "fr/iptv-france":   { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",     fr: "/fr/iptv-france/",   es: "/es/iptv-espana/" },
+      "fr/iptv-belgique": { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",     fr: "/fr/iptv-belgique/", es: "/es/iptv-espana/" },
+      "fr/iptv-canada":   { ar: "/ar/iptv-home/", en: "/en/iptv-canada/", fr: "/fr/iptv-canada/",   es: "/es/iptv-inicio/" },
 
       // الإسبانية
-      "es/iptv-espana":   { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-france/", es: "/es/iptv-espana/" },
-      "es/iptv-mexico":   { ar: "/ar/home/", en: "/guide/united-states/",  fr: "/fr/accueil/",     es: "/es/iptv-mexico/" },
-      "es/iptv-argentina":{ ar: "/ar/home/", en: "/guide/united-states/",  fr: "/fr/accueil/",     es: "/es/iptv-argentina/" },
+      "es/iptv-espana":    { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",  fr: "/fr/iptv-france/",  es: "/es/iptv-espana/" },
+      "es/iptv-mexico":    { ar: "/ar/iptv-home/", en: "/en/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-mexico/" },
+      "es/iptv-argentina": { ar: "/ar/iptv-home/", en: "/en/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-argentina/" },
 
-      // العربية المناطقية (الأدلة)
-      "ar/guide/al-khalij": { ar: "/ar/guide/al-khalij/", en: "/",  fr: "/fr/accueil/",     es: "/es/inicio/" },
-      "ar/guide/maghreb":   { ar: "/ar/guide/maghreb/",   en: "/",  fr: "/fr/iptv-france/", es: "/es/inicio/" },
-      "ar/guide/mashriq":   { ar: "/ar/guide/mashriq/",   en: "/",  fr: "/fr/accueil/",     es: "/es/inicio/" },
+      // العربية المناطقية
+      "ar/iptv-gulf":    { ar: "/ar/iptv-gulf/",    en: "/en/iptv-home/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "ar/iptv-morocco": { ar: "/ar/iptv-morocco/", en: "/en/iptv-home/", fr: "/fr/iptv-france/",   es: "/es/iptv-inicio/" },
+      "ar/iptv-mashriq": { ar: "/ar/iptv-mashriq/", en: "/en/iptv-home/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
 
       // الأدلة
-      "ar/dalil":     { ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
-      "fr/guide-iptv":{ ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
-      "es/guia":      { ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
-      "iptv-guides":  { ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
+      "ar/iptv-guide": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "fr/guide-iptv": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "es/guia-iptv":  { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "en/iptv-guide": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
 
       // الرئيسية
-      "ar/home":    { ar: "/ar/home/",    en: "/", fr: "/fr/accueil/", es: "/es/inicio/" },
-      "fr/accueil": { ar: "/ar/home/",    en: "/", fr: "/fr/accueil/", es: "/es/inicio/" },
-      "es/inicio":  { ar: "/ar/home/",    en: "/", fr: "/fr/accueil/", es: "/es/inicio/" },
+      "ar/iptv-home":    { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
+      "fr/iptv-accueil": { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
+      "es/iptv-inicio":  { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
+      "en/iptv-home":    { ar: "/ar/iptv-home/", en: "/en/iptv-home/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
     };
 
     let target = null;
@@ -235,10 +236,10 @@ document.querySelectorAll(".lang-option").forEach(option => {
     }
 
     if (!target) {
-      if (selectedLang === "ar")      target = "/ar/home/";
+      if (selectedLang === "ar")      target = "/ar/iptv-home/";
       else if (selectedLang === "en") target = "/";
-      else if (selectedLang === "fr") target = "/fr/accueil/";
-      else if (selectedLang === "es") target = "/es/inicio/";
+      else if (selectedLang === "fr") target = "/fr/iptv-accueil/";
+      else if (selectedLang === "es") target = "/es/iptv-inicio/";
     }
 
     location.href = target;

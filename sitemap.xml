@@ -2,53 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ===== الصفحات الرئيسية (4) ===== -->
   <url>
     <loc>https://primeiptvplus.com/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/home/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/accueil/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/inicio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-accueil/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/iptv-inicio/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/"/>
   </url>
 
   <url>
-    <loc>https://primeiptvplus.com/ar/home/</loc>
+    <loc>https://primeiptvplus.com/en/iptv-home/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-accueil/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/iptv-inicio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/"/>
   </url>
 
   <url>
-    <loc>https://primeiptvplus.com/fr/accueil/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/es/inicio/</loc>
+    <loc>https://primeiptvplus.com/ar/iptv-home/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-accueil/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/iptv-inicio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/"/>
   </url>
 
-  <!-- ===== أدلة الاستخدام (4) ===== -->
   <url>
-    <loc>https://primeiptvplus.com/iptv-guides/</loc>
+    <loc>https://primeiptvplus.com/fr/iptv-accueil/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-accueil/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/iptv-inicio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/"/>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/es/iptv-inicio/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-home/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-accueil/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/iptv-inicio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/"/>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/en/iptv-guide/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/guide-iptv/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/guia-iptv/"/>
   </url>
 
   <url>
-    <loc>https://primeiptvplus.com/ar/dalil/</loc>
+    <loc>https://primeiptvplus.com/ar/iptv-guide/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/guide-iptv/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/guia-iptv/"/>
   </url>
 
   <url>
@@ -56,60 +89,46 @@
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/guide-iptv/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/guia-iptv/"/>
   </url>
 
   <url>
-    <loc>https://primeiptvplus.com/es/guia/</loc>
+    <loc>https://primeiptvplus.com/es/guia-iptv/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- ===== الصفحات الفرعية العربية — المناطق (3) ===== -->
-  <url>
-    <loc>https://primeiptvplus.com/ar/guide/maghreb/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/iptv-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/guide-iptv/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/guia-iptv/"/>
   </url>
 
   <url>
-    <loc>https://primeiptvplus.com/ar/guide/mashriq/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/ar/guide/al-khalij/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== الصفحات الفرعية الإنجليزية — الدول (3) ===== -->
-  <url>
-    <loc>https://primeiptvplus.com/guide/united-states/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/guide/united-kingdom/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://primeiptvplus.com/guide/iptv-canada/</loc>
+    <loc>https://primeiptvplus.com/en/iptv-usa/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== الصفحات الفرعية الفرنسية — الدول (3) ===== -->
+  <url>
+    <loc>https://primeiptvplus.com/en/iptv-uk/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/en/iptv-canada/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-canada/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-canada/"/>
+  </url>
+
   <url>
     <loc>https://primeiptvplus.com/fr/iptv-france/</loc>
     <lastmod>2026-07-08</lastmod>
@@ -119,7 +138,7 @@
 
   <url>
     <loc>https://primeiptvplus.com/fr/iptv-belgique/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -129,9 +148,10 @@
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/en/iptv-canada/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/iptv-canada/"/>
   </url>
 
-  <!-- ===== الصفحات الفرعية الإسبانية — الدول (3) ===== -->
   <url>
     <loc>https://primeiptvplus.com/es/iptv-espana/</loc>
     <lastmod>2026-07-08</lastmod>
@@ -153,5 +173,25 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://primeiptvplus.com/ar/iptv-morocco/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/ar/iptv-mashriq/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://primeiptvplus.com/ar/iptv-gulf/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
