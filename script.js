@@ -194,35 +194,35 @@ document.querySelectorAll(".lang-option").forEach(option => {
 
     const langMap = {
       // الإنجليزية — sub-pages at root level
-      "guide/usa":  { ar: "/ar/",          en: "/guide/usa/",  fr: "/fr/",          es: "/es/" },
-      "guide/uk":   { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/belgique/", es: "/es/" },
-      "guide/canada":{ ar: "/ar/",         en: "/guide/canada/",fr: "/fr/canada/",   es: "/es/" },
+      "guide/united-states":  { ar: "/ar/home/", en: "/guide/united-states/",  fr: "/fr/accueil/",      es: "/es/inicio/" },
+      "guide/united-kingdom": { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-belgique/", es: "/es/inicio/" },
+      "guide/iptv-canada":    { ar: "/ar/home/", en: "/guide/iptv-canada/",    fr: "/fr/iptv-canada/",   es: "/es/inicio/" },
 
       // الفرنسية
-      "fr/france":   { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/france/",   es: "/es/espana/" },
-      "fr/belgique": { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/belgique/", es: "/es/espana/" },
-      "fr/canada":   { ar: "/ar/",          en: "/guide/canada/",fr: "/fr/canada/",   es: "/es/" },
+      "fr/iptv-france":   { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-france/",   es: "/es/iptv-espana/" },
+      "fr/iptv-belgique": { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-belgique/", es: "/es/iptv-espana/" },
+      "fr/iptv-canada":   { ar: "/ar/home/", en: "/guide/iptv-canada/",    fr: "/fr/iptv-canada/",   es: "/es/inicio/" },
 
       // الإسبانية
-      "es/espana":   { ar: "/ar/",          en: "/guide/uk/",   fr: "/fr/france/",   es: "/es/espana/" },
-      "es/mexico":   { ar: "/ar/",          en: "/guide/usa/",   fr: "/fr/",          es: "/es/mexico/" },
-      "es/argentina":{ ar: "/ar/",          en: "/guide/usa/",   fr: "/fr/",          es: "/es/argentina/" },
+      "es/iptv-espana":   { ar: "/ar/home/", en: "/guide/united-kingdom/", fr: "/fr/iptv-france/", es: "/es/iptv-espana/" },
+      "es/iptv-mexico":   { ar: "/ar/home/", en: "/guide/united-states/",  fr: "/fr/accueil/",     es: "/es/iptv-mexico/" },
+      "es/iptv-argentina":{ ar: "/ar/home/", en: "/guide/united-states/",  fr: "/fr/accueil/",     es: "/es/iptv-argentina/" },
 
       // العربية المناطقية (الأدلة)
-      "ar/guide/khalij":  { ar: "/ar/guide/khalij/",  en: "/",   fr: "/fr/",          es: "/es/" },
-      "ar/guide/maghreb": { ar: "/ar/guide/maghreb/", en: "/",   fr: "/fr/france/",   es: "/es/" },
-      "ar/guide/mashriq": { ar: "/ar/guide/mashriq/", en: "/",   fr: "/fr/",          es: "/es/" },
+      "ar/guide/al-khalij": { ar: "/ar/guide/al-khalij/", en: "/",  fr: "/fr/accueil/",     es: "/es/inicio/" },
+      "ar/guide/maghreb":   { ar: "/ar/guide/maghreb/",   en: "/",  fr: "/fr/iptv-france/", es: "/es/inicio/" },
+      "ar/guide/mashriq":   { ar: "/ar/guide/mashriq/",   en: "/",  fr: "/fr/accueil/",     es: "/es/inicio/" },
 
       // الأدلة
-      "ar/guide":    { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
-      "fr/guide":    { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
-      "es/guide":    { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
-      "guide":       { ar: "/ar/guide/",    en: "/guide/",    fr: "/fr/guide/",    es: "/es/guide/" },
+      "ar/dalil":     { ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
+      "fr/guide-iptv":{ ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
+      "es/guia":      { ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
+      "iptv-guides":  { ar: "/ar/dalil/", en: "/iptv-guides/", fr: "/fr/guide-iptv/", es: "/es/guia/" },
 
       // الرئيسية
-      "ar":          { ar: "/ar/",          en: "/",           fr: "/fr/",          es: "/es/" },
-      "fr":          { ar: "/ar/",          en: "/",           fr: "/fr/",          es: "/es/" },
-      "es":          { ar: "/ar/",          en: "/",           fr: "/fr/",          es: "/es/" },
+      "ar/home":    { ar: "/ar/home/",    en: "/", fr: "/fr/accueil/", es: "/es/inicio/" },
+      "fr/accueil": { ar: "/ar/home/",    en: "/", fr: "/fr/accueil/", es: "/es/inicio/" },
+      "es/inicio":  { ar: "/ar/home/",    en: "/", fr: "/fr/accueil/", es: "/es/inicio/" },
     };
 
     let target = null;
@@ -235,10 +235,10 @@ document.querySelectorAll(".lang-option").forEach(option => {
     }
 
     if (!target) {
-      if (selectedLang === "ar")      target = "/ar/";
+      if (selectedLang === "ar")      target = "/ar/home/";
       else if (selectedLang === "en") target = "/";
-      else if (selectedLang === "fr") target = "/fr/";
-      else if (selectedLang === "es") target = "/es/";
+      else if (selectedLang === "fr") target = "/fr/accueil/";
+      else if (selectedLang === "es") target = "/es/inicio/";
     }
 
     location.href = target;
