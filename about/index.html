@@ -1,39 +1,52 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="تعرف على Prime IPTV — يديرها Mohammed Bouinidane من سلا، المغرب. رؤيتنا ومهمتنا في تقديم خدمة بث موثوقة.">
-  <title>من نحن – Prime IPTV</title>
+  <meta name="description" content="About Prime IPTV — operated by Mohammed Bouinidane from Sale, Morocco. Our vision and mission.">
+  <title>About Us – Prime IPTV</title>
   <link rel="canonical" href="https://primeiptvplus.com/about/">
+  <link rel="alternate" hreflang="en" href="https://primeiptvplus.com/about/">
+  <link rel="alternate" hreflang="ar" href="https://primeiptvplus.com/ar/about/">
+  <link rel="alternate" hreflang="fr" href="https://primeiptvplus.com/fr/about/">
+  <link rel="alternate" hreflang="es" href="https://primeiptvplus.com/es/about/">
+  <link rel="alternate" hreflang="x-default" href="https://primeiptvplus.com/about/">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/css/tailwind.min.css">
   <style>
-    body { font-family: 'Tajawal', sans-serif; }
-    h1,h2,h3 { font-family: 'Cairo', sans-serif; font-weight: 800; }
+    body { font-family: 'Poppins', sans-serif; }
+    h1,h2,h3 { font-family:'Poppins',sans-serif; font-weight: 800; }
     .prose h2 {
       color: #6d28d9;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 800;
       margin: 2rem 0 0.6rem;
-      padding-right: 0.75rem;
-      border-right: 4px solid #7c3aed;
+      padding-left: 0.75rem;
+      border-left: 4px solid #7c3aed;
     }
     .prose p, .prose li {
       color: #374151;
-      line-height: 2;
+      line-height: 1.9;
       margin-bottom: 0.4rem;
       font-size: 0.97rem;
     }
-    .prose ul { list-style: disc; padding-right: 1.5rem; }
+    .prose ul { list-style: disc; padding-left: 1.5rem; }
+    .prose ol { padding-left: 1.5rem; }
     .prose a { color: #7c3aed; }
     .prose a:hover { text-decoration: underline; }
     .prose strong { color: #1f2937; }
+    .highlight-box {
+      background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+      border-left: 4px solid #7c3aed;
+      padding: 1rem 1.25rem;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+    }
     .info-card {
       background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
       border: 1px solid #ddd6fe;
@@ -41,18 +54,18 @@
       padding: 1.5rem;
       margin: 1.5rem 0;
     }
-    .stat-box {
-      background: white;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      text-align: center;
-      border: 1px solid #e5e7eb;
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
     }
-    .stat-number {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #7c3aed;
-      font-family: 'Cairo', sans-serif;
+    input:focus, textarea:focus { outline: none; border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124,58,237,0.15); }
+    .btn-submit {
+      background: linear-gradient(135deg,#7c3aed,#4f46e5);
+      color: white; padding: 0.85rem 2rem; border-radius: 0.75rem;
+      font-weight: 700; border: none; cursor: pointer;
     }
   </style>
 <!-- Google tag (gtag.js) -->
@@ -78,15 +91,15 @@ gtag('config', 'G-MYZJREE8MD');
 <!-- Header -->
 <header class="fixed w-full bg-gradient-to-r from-blue-50 to-purple-50 shadow-md z-50">
   <div class="container mx-auto px-4 flex items-center justify-between h-auto py-2">
-    <a href="/ar/iptv-home/" class="flex items-center space-x-4">
-      <img src="/images/logo.webp" alt="شعار Prime IPTV"
+    <a href="/" class="flex items-center space-x-4">
+      <img src="/images/logo.webp" alt="Prime IPTV Logo"
            class="block h-16 w-16 rounded-full object-cover shadow"
            width="64" height="64">
-      <span class="text-xl md:text-2xl font-bold text-purple-700 mr-3">Prime IPTV</span>
+      <span class="text-xl md:text-2xl font-bold text-purple-700 mx-3">Prime IPTV</span>
     </a>
-    <a href="/ar/iptv-home/" class="flex items-center gap-2 text-purple-700 hover:text-purple-900 font-semibold text-sm transition">
-      <i class="fas fa-arrow-right"></i>
-      الرئيسية
+    <a href="/" class="flex items-center gap-2 text-purple-700 hover:text-purple-900 font-semibold text-sm transition">
+      <i class="fas fa-arrow-left"></i>
+      Home
     </a>
   </div>
 </header>
@@ -97,8 +110,8 @@ gtag('config', 'G-MYZJREE8MD');
     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-4">
       <i class="fas fa-users text-2xl text-white"></i>
     </div>
-    <h1 class="text-3xl md:text-4xl font-extrabold mb-2">من نحن</h1>
-    <p class="text-purple-200 text-sm">شركة مغربية للبث الرقمي</p>
+    <h1 class="text-3xl md:text-4xl font-extrabold mb-2">About Us</h1>
+    <p class="text-purple-200 text-sm">A Moroccan digital streaming business</p>
   </div>
 </div>
 
@@ -107,74 +120,53 @@ gtag('config', 'G-MYZJREE8MD');
   <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
     <div class="prose">
 
-      <p><strong>Prime IPTV</strong> خدمة بث رقمي يديرها ريادي أعمال مغربي، متخصصة في تقديم محتوى ترفيهي عالي الجودة لمستخدمين حول العالم. نجمع بين خدمة موثوقة وأسعار تنافسية ودعم بأربع لغات.</p>
+      <p><strong>Prime IPTV</strong> is a digital streaming service run by a Moroccan entrepreneur, specialising in high-quality entertainment for customers worldwide. We combine a reliable service, competitive prices and support in four languages.</p>
 
       <div class="info-card">
-        <h3 class="text-xl font-bold text-purple-800 mb-3"><i class="fas fa-user-tie ml-2"></i>معلومات المُدير</h3>
-        <ul class="text-sm space-y-1 text-gray-700 m-0 pr-0" style="list-style:none;">
-          <li><strong>الاسم:</strong> Mohammed Bouinidane</li>
-          <li><strong>الدور:</strong> المؤسس والمدير التنفيذي</li>
-          <li><strong>المقر:</strong> سلا، المملكة المغربية</li>
-          <li><strong>العنوان الكامل:</strong> Saniat Cherkawi Rue Chams N41, Sale 11000, Morocco</li>
-          <li><strong>البريد الإلكتروني:</strong> <a href="mailto:support@primeiptvplus.com">support@primeiptvplus.com</a></li>
+        <h3 class="text-xl font-bold text-purple-800 mb-3"><i class="fas fa-user-tie mx-2"></i>Owner information</h3>
+        <ul class="text-sm space-y-1 text-gray-700 m-0" style="list-style:none;padding:0;">
+          <li><strong>Name:</strong> Mohammed Bouinidane</li>
+          <li><strong>Role:</strong> Founder &amp; Managing Director</li>
+          <li><strong>Location:</strong> Sale, Kingdom of Morocco</li>
+          <li><strong>Full address:</strong> Saniat Cherkawi Rue Chams N41, Sale 11000, Morocco</li>
+          <li><strong>Email:</strong> <a href="mailto:support@primeiptvplus.com">support@primeiptvplus.com</a></li>
         </ul>
       </div>
 
-      <h2>رؤيتنا</h2>
-      <p>أن نكون الخيار المفضل لعشاق البث الرقمي في المنطقة العربية وأوروبا وأمريكا الشمالية، عبر تقديم خدمة تجمع بين الجودة والاستقرار والأسعار المعقولة، مع دعم عملاء متعدد اللغات.</p>
+      <h2>Our vision</h2>
+      <p>To be the preferred choice for streaming enthusiasts across the Arab world, Europe and North America by combining quality, stability and fair prices with multilingual customer support.</p>
 
-      <h2>مهمتنا</h2>
+      <h2>Our mission</h2>
       <ul>
-        <li>تقديم بث بجودة عالية لأكثر من 20 دولة.</li>
-        <li>الحفاظ على دعم فني سريع بأربع لغات (العربية، الإنجليزية، الفرنسية، الإسبانية).</li>
-        <li>احترام حقوق العملاء عبر سياسات واضحة للخصوصية والاسترداد.</li>
-        <li>الالتزام بالقوانين المعمول بها والاستجابة لأي طلبات قانونية بسرعة.</li>
+        <li>Deliver high-quality streaming to customers in more than 20 countries.</li>
+        <li>Provide fast technical support in four languages (Arabic, English, French, Spanish).</li>
+        <li>Respect customer rights through clear privacy and refund policies.</li>
+        <li>Comply with applicable laws and respond quickly to any legal request.</li>
       </ul>
 
-      <h2>قيمنا</h2>
+      <h2>Our values</h2>
       <ul>
-        <li><strong>الشفافية:</strong> سياسات واضحة وأسعار معلنة بدون رسوم خفية.</li>
-        <li><strong>الجودة:</strong> نستخدم بنية تحتية موثوقة لضمان استقرار الخدمة.</li>
-        <li><strong>الدعم:</strong> ردود سريعة على الاستفسارات خلال 24 ساعة كحد أقصى.</li>
-        <li><strong>المسؤولية:</strong> نلتزم بالقوانين المعمول بها في كل بلد نخدمه.</li>
+        <li><strong>Transparency:</strong> clear policies and published prices with no hidden fees.</li>
+        <li><strong>Quality:</strong> reliable infrastructure for a stable service.</li>
+        <li><strong>Support:</strong> replies to enquiries within 24 hours at most.</li>
+        <li><strong>Responsibility:</strong> compliance with the laws of every country we serve.</li>
       </ul>
 
-      <h2>لماذا Prime IPTV؟</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-        <div class="stat-box">
-          <div class="stat-number">4</div>
-          <p class="text-xs text-gray-600 m-0">لغات مدعومة</p>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">20+</div>
-          <p class="text-xs text-gray-600 m-0">دولة نخدمها</p>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">7</div>
-          <p class="text-xs text-gray-600 m-0">أيام ضمان استرداد</p>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">24h</div>
-          <p class="text-xs text-gray-600 m-0">زمن الدعم</p>
-        </div>
-      </div>
+      <h2>Legal commitment</h2>
+      <p>We respect copyright law and respond to any <a href="/dmca/">DMCA notice</a> within 24 hours. For legal matters, contact us at <a href="mailto:support@primeiptvplus.com">support@primeiptvplus.com</a>.</p>
 
-      <h2>التزامنا القانوني</h2>
-      <p>نلتزم باحترام قوانين حقوق الطبع والنشر ونستجيب لأي بلاغات <a href="https://www.dmca.com/" target="_blank" rel="noopener">DMCA</a> خلال 24 ساعة. للتواصل بشأن أي بلاغ قانوني، راسلنا على <a href="mailto:support@primeiptvplus.com">support@primeiptvplus.com</a>.</p>
-
-      <h2>تواصل معنا</h2>
-      <p>ننتظر أسئلتك في أي وقت:</p>
+      <h2>Contact us</h2>
       <ul>
-        <li>البريد الإلكتروني: <a href="mailto:support@primeiptvplus.com">support@primeiptvplus.com</a></li>
-        <li>واتساب: <a href="https://wa.me/212666686732" target="_blank" rel="noopener" dir="ltr" style="unicode-bidi:embed;">+212 666 686 732 <i class="fab fa-whatsapp text-green-500"></i></a></li>
-        <li>صفحة الاتصال: <a href="/contact/">/contact/</a></li>
+        <li>Email: <a href="mailto:support@primeiptvplus.com">support@primeiptvplus.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/212666686732" target="_blank" rel="noopener" dir="ltr" style="unicode-bidi:embed;">+212 666 686 732 <i class="fab fa-whatsapp text-green-500"></i></a></li>
+        <li>Contact page: <a href="/contact/">/contact/</a></li>
       </ul>
 
     </div>
   </div>
 </main>
 
-<!-- Footer — موحد -->
+<!-- Footer -->
 <footer class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white py-10">
   <div class="container mx-auto px-4 text-center">
     <div class="flex items-center justify-center gap-3 mb-4">
@@ -182,17 +174,19 @@ gtag('config', 'G-MYZJREE8MD');
       <span class="text-xl font-bold">Prime IPTV</span>
     </div>
     <div class="flex flex-wrap justify-center gap-4 mb-4 text-sm">
-      <a href="/about/" class="text-white font-semibold border-b-2 border-white/60 pb-0.5">من نحن</a>
+      <a href="/about/" class="text-white font-semibold border-b-2 border-white/60 pb-0.5">About Us</a>
       <span class="text-purple-300">|</span>
-      <a href="/contact/" class="text-purple-200 hover:text-white transition">اتصل بنا</a>
+      <a href="/contact/" class="text-purple-200 hover:text-white transition">Contact</a>
       <span class="text-purple-300">|</span>
-      <a href="/privacy-policy/" class="text-purple-200 hover:text-white transition">سياسة الخصوصية</a>
+      <a href="/privacy-policy/" class="text-purple-200 hover:text-white transition">Privacy Policy</a>
       <span class="text-purple-300">|</span>
-      <a href="/terms-of-service/" class="text-purple-200 hover:text-white transition">شروط الاستخدام</a>
+      <a href="/terms-of-service/" class="text-purple-200 hover:text-white transition">Terms of Service</a>
       <span class="text-purple-300">|</span>
-      <a href="/refund/" class="text-purple-200 hover:text-white transition">سياسة الاسترداد</a>
+      <a href="/refund/" class="text-purple-200 hover:text-white transition">Refund Policy</a>
+      <span class="text-purple-300">|</span>
+      <a href="/dmca/" class="text-purple-200 hover:text-white transition">DMCA</a>
     </div>
-    
+
     <div class="mt-6 pt-4 border-t border-white/20 mb-6">
       <h4 class="text-center text-sm font-semibold text-purple-200 uppercase tracking-wider mb-4">🌍 Prime IPTV – Global Coverage</h4>
       <div class="flex flex-wrap justify-center gap-2">
@@ -209,9 +203,9 @@ gtag('config', 'G-MYZJREE8MD');
         <a href="/ar/iptv-mashriq/"   class="flex items-center gap-2 bg-white/10 hover:bg-white/25 px-3 py-1.5 rounded-full text-xs font-medium transition text-white">🇪🇬 المشرق</a>
       </div>
     </div>
-    <p class="text-purple-200 text-xs mb-1">Mohammed Bouinidane — Saniat Cherkawi Rue Chams N41, Sale 11000, Morocco</p>
-    <p class="text-purple-200 text-xs mb-2"><a href="mailto:support@primeiptvplus.com" class="hover:text-white">support@primeiptvplus.com</a></p>
-    <p class="text-purple-200 text-sm">© 2026 Prime IPTV — جميع الحقوق محفوظة</p>
+
+    <p class="text-purple-200 text-xs mb-1" style="text-align:center;">Prime IPTV — operated by Mohammed Bouinidane · Saniat Cherkawi Rue Chams N41, Sale 11000, Morocco · support@primeiptvplus.com</p>
+    <p class="text-purple-200 text-sm" style="text-align:center;">© 2026 Prime IPTV — All rights reserved</p>
   </div>
 </footer>
 
