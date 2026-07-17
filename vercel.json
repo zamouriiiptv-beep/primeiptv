@@ -16,6 +16,7 @@
     { "source": "/es/guia/:path*", "destination": "/es/guia-iptv/", "permanent": true },
     { "source": "/usa/:path*", "destination": "/en/iptv-usa/", "permanent": true },
     { "source": "/uk/:path*", "destination": "/en/iptv-uk/", "permanent": true },
-    { "source": "/canada/:path*", "destination": "/en/iptv-canada/", "permanent": true }
+    { "source": "/canada/:path*", "destination": "/en/iptv-canada/", "permanent": true },
+    { "source": "/test-redirect", "destination": "/", "permanent": false }
   ]
 }
