@@ -1,0 +1,21 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": false,
+  "redirects": [
+    { "source": "/guide/united-states/:path*", "destination": "/en/iptv-usa/", "permanent": true },
+    { "source": "/guide/united-kingdom/:path*", "destination": "/en/iptv-uk/", "permanent": true },
+    { "source": "/guide/iptv-canada/:path*", "destination": "/en/iptv-canada/", "permanent": true },
+    { "source": "/iptv-guides/:path*", "destination": "/en/iptv-guide/", "permanent": true },
+    { "source": "/fr/accueil/:path*", "destination": "/fr/iptv-accueil/", "permanent": true },
+    { "source": "/ar/guide/maghreb/:path*", "destination": "/ar/iptv-morocco/", "permanent": true },
+    { "source": "/ar/guide/mashriq/:path*", "destination": "/ar/iptv-mashriq/", "permanent": true },
+    { "source": "/ar/guide/al-khalij/:path*", "destination": "/ar/iptv-gulf/", "permanent": true },
+    { "source": "/ar/home/:path*", "destination": "/ar/iptv-home/", "permanent": true },
+    { "source": "/ar/dalil/:path*", "destination": "/ar/iptv-guide/", "permanent": true },
+    { "source": "/es/inicio/:path*", "destination": "/es/iptv-inicio/", "permanent": true },
+    { "source": "/es/guia/:path*", "destination": "/es/guia-iptv/", "permanent": true },
+    { "source": "/usa/:path*", "destination": "/en/iptv-usa/", "permanent": true },
+    { "source": "/uk/:path*", "destination": "/en/iptv-uk/", "permanent": true },
+    { "source": "/canada/:path*", "destination": "/en/iptv-canada/", "permanent": true }
+  ]
+}
