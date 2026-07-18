@@ -1,17 +1,4 @@
 User-agent: *
 Allow: /
 
-# Non-existent legacy pages (external backlinks - 404)
-Disallow: /iptv-guide-ar.html
-Disallow: /iptv-guide-en.html
-Disallow: /iptv-guide-fr.html
-Disallow: /best-iptv-usa-guide.html
-
-# Unsupported languages guessed by crawlers (site only has en/ar/fr/es) - 404
-Disallow: /it
-Disallow: /pt
-Disallow: /de
-Disallow: /tr
-Disallow: /nl
-
 Sitemap: https://primeiptvplus.com/sitemap.xml
