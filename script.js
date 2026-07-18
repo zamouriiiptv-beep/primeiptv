@@ -147,7 +147,7 @@ const currentFlag = document.getElementById("current-flag");
   if (path.startsWith("/ar/"))   lang = "ar";
   else if (path.startsWith("/fr/"))   lang = "fr";
   else if (path.startsWith("/es/"))   lang = "es";
-  // else: / and /en/... → en
+  // else: / → en
 
   document.documentElement.lang = lang;
   localStorage.setItem("site_lang", lang);
@@ -194,19 +194,19 @@ document.querySelectorAll(".lang-option").forEach(option => {
 
     const langMap = {
       // الإنجليزية
-      "en/iptv-usa":    { ar: "/ar/iptv-home/", en: "/en/iptv-usa/",    fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
-      "en/iptv-uk":     { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",     fr: "/fr/iptv-belgique/", es: "/es/iptv-inicio/" },
-      "en/iptv-canada": { ar: "/ar/iptv-home/", en: "/en/iptv-canada/", fr: "/fr/iptv-canada/",   es: "/es/iptv-inicio/" },
+      "en/iptv-usa":    { ar: "/ar/iptv-home/", en: "/iptv-usa/",    fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "en/iptv-uk":     { ar: "/ar/iptv-home/", en: "/iptv-uk/",     fr: "/fr/iptv-belgique/", es: "/es/iptv-inicio/" },
+      "en/iptv-canada": { ar: "/ar/iptv-home/", en: "/iptv-canada/", fr: "/fr/iptv-canada/",   es: "/es/iptv-inicio/" },
 
       // الفرنسية
-      "fr/iptv-france":   { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",     fr: "/fr/iptv-france/",   es: "/es/iptv-espana/" },
-      "fr/iptv-belgique": { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",     fr: "/fr/iptv-belgique/", es: "/es/iptv-espana/" },
-      "fr/iptv-canada":   { ar: "/ar/iptv-home/", en: "/en/iptv-canada/", fr: "/fr/iptv-canada/",   es: "/es/iptv-inicio/" },
+      "fr/iptv-france":   { ar: "/ar/iptv-home/", en: "/iptv-uk/",     fr: "/fr/iptv-france/",   es: "/es/iptv-espana/" },
+      "fr/iptv-belgique": { ar: "/ar/iptv-home/", en: "/iptv-uk/",     fr: "/fr/iptv-belgique/", es: "/es/iptv-espana/" },
+      "fr/iptv-canada":   { ar: "/ar/iptv-home/", en: "/iptv-canada/", fr: "/fr/iptv-canada/",   es: "/es/iptv-inicio/" },
 
       // الإسبانية
-      "es/iptv-espana":    { ar: "/ar/iptv-home/", en: "/en/iptv-uk/",  fr: "/fr/iptv-france/",  es: "/es/iptv-espana/" },
-      "es/iptv-mexico":    { ar: "/ar/iptv-home/", en: "/en/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-mexico/" },
-      "es/iptv-argentina": { ar: "/ar/iptv-home/", en: "/en/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-argentina/" },
+      "es/iptv-espana":    { ar: "/ar/iptv-home/", en: "/iptv-uk/",  fr: "/fr/iptv-france/",  es: "/es/iptv-espana/" },
+      "es/iptv-mexico":    { ar: "/ar/iptv-home/", en: "/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-mexico/" },
+      "es/iptv-argentina": { ar: "/ar/iptv-home/", en: "/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-argentina/" },
 
       // العربية المناطقية
       "ar/iptv-gulf":    { ar: "/ar/iptv-gulf/",    en: "/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
@@ -214,10 +214,10 @@ document.querySelectorAll(".lang-option").forEach(option => {
       "ar/iptv-mashriq": { ar: "/ar/iptv-mashriq/", en: "/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
 
       // الأدلة
-      "ar/iptv-guide": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
-      "fr/guide-iptv": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
-      "es/guia-iptv":  { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
-      "en/iptv-guide": { ar: "/ar/iptv-guide/", en: "/en/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "ar/iptv-guide": { ar: "/ar/iptv-guide/", en: "/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "fr/guide-iptv": { ar: "/ar/iptv-guide/", en: "/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "es/guia-iptv":  { ar: "/ar/iptv-guide/", en: "/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
+      "en/iptv-guide": { ar: "/ar/iptv-guide/", en: "/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
 
       // الرئيسية
       "ar/iptv-home":    { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
