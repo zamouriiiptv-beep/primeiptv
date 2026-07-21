@@ -147,7 +147,7 @@ const currentFlag = document.getElementById("current-flag");
   if (path.startsWith("/ar/"))   lang = "ar";
   else if (path.startsWith("/fr/"))   lang = "fr";
   else if (path.startsWith("/es/"))   lang = "es";
-  // else: / → en
+  // else: /home/ → en
 
   document.documentElement.lang = lang;
   localStorage.setItem("site_lang", lang);
@@ -209,9 +209,9 @@ document.querySelectorAll(".lang-option").forEach(option => {
       "es/iptv-argentina": { ar: "/ar/iptv-home/", en: "/iptv-usa/", fr: "/fr/iptv-accueil/", es: "/es/iptv-argentina/" },
 
       // العربية المناطقية
-      "ar/iptv-gulf":    { ar: "/ar/iptv-gulf/",    en: "/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
-      "ar/iptv-morocco": { ar: "/ar/iptv-morocco/", en: "/", fr: "/fr/iptv-france/",   es: "/es/iptv-inicio/" },
-      "ar/iptv-mashriq": { ar: "/ar/iptv-mashriq/", en: "/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "ar/iptv-gulf":    { ar: "/ar/iptv-gulf/",    en: "/home/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
+      "ar/iptv-morocco": { ar: "/ar/iptv-morocco/", en: "/home/", fr: "/fr/iptv-france/",   es: "/es/iptv-inicio/" },
+      "ar/iptv-mashriq": { ar: "/ar/iptv-mashriq/", en: "/home/", fr: "/fr/iptv-accueil/",  es: "/es/iptv-inicio/" },
 
       // الأدلة
       "ar/iptv-guide": { ar: "/ar/iptv-guide/", en: "/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
@@ -220,9 +220,9 @@ document.querySelectorAll(".lang-option").forEach(option => {
       "en/iptv-guide": { ar: "/ar/iptv-guide/", en: "/iptv-guide/", fr: "/fr/guide-iptv/", es: "/es/guia-iptv/" },
 
       // الرئيسية
-      "ar/iptv-home":    { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
-      "fr/iptv-accueil": { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
-      "es/iptv-inicio":  { ar: "/ar/iptv-home/", en: "/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
+      "ar/iptv-home":    { ar: "/ar/iptv-home/", en: "/home/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
+      "fr/iptv-accueil": { ar: "/ar/iptv-home/", en: "/home/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
+      "es/iptv-inicio":  { ar: "/ar/iptv-home/", en: "/home/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" },
     };
 
     let target = null;
@@ -236,7 +236,7 @@ document.querySelectorAll(".lang-option").forEach(option => {
 
     if (!target) {
       if (selectedLang === "ar")      target = "/ar/iptv-home/";
-      else if (selectedLang === "en") target = "/";
+      else if (selectedLang === "en") target = "/home/";
       else if (selectedLang === "fr") target = "/fr/iptv-accueil/";
       else if (selectedLang === "es") target = "/es/iptv-inicio/";
     }
