@@ -336,7 +336,7 @@ document.addEventListener("click", () => {
 
 /* ========================================================= */
 /* =========================== FAQ ========================= */
-/* =================== + و × Netflix Style ================= */
+/* =================== + و × Stream Style ================= */
 
 document.querySelectorAll(".faq-btn").forEach((btn) => {
   btn.addEventListener("click", () => {

@@ -938,7 +938,7 @@ a.button {
 /* ===============================
 🗂️ البطاقة (إطار علوي + أيسر)
 =============================== */
-.netflix-card-light {
+.stream-card-light {
   position: relative;
   overflow: hidden;
   background: #ffffff !important;
@@ -958,7 +958,7 @@ a.button {
 }
 
 /* 🔥 الإطار العلوي */
-.netflix-card-light::before {
+.stream-card-light::before {
   content: "";
   position: absolute;
   top: 0;
@@ -970,7 +970,7 @@ a.button {
 }
 
 /* 🔥 الإطار اليسار */
-.netflix-card-light::after {
+.stream-card-light::after {
   content: "";
   position: absolute;
   top: 0;
@@ -983,19 +983,19 @@ a.button {
 
 /* Hover احترافي */
 @media (hover: hover) {
-  .netflix-card-light:hover {
+  .stream-card-light:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 28px rgba(91,22,163,.18);
   }
 
-  .netflix-card-light:hover::before,
-  .netflix-card-light:hover::after {
+  .stream-card-light:hover::before,
+  .stream-card-light:hover::after {
     opacity: 1;
   }
 }
 
 /* عنوان البطاقة */
-.netflix-card-light h3 {
+.stream-card-light h3 {
   font-size: 19px;
   font-weight: 900;
   margin-bottom: 10px;
@@ -1004,7 +1004,7 @@ a.button {
 }
 
 /* نص البطاقة */
-.netflix-card-light p {
+.stream-card-light p {
   font-size: 15px;
   line-height: 1.75;
   color: #4b5563;
@@ -1059,17 +1059,17 @@ a.button {
     font-size: 16px;
   }
 
-  .netflix-card-light {
+  .stream-card-light {
     min-height: 200px;
     padding: 20px 18px 52px;
     border-radius: 18px;
   }
 
-  .netflix-card-light h3 {
+  .stream-card-light h3 {
     font-size: 17px;
   }
 
-  .netflix-card-light p {
+  .stream-card-light p {
     font-size: 14.5px;
   }
 
@@ -1779,12 +1779,12 @@ section > *:last-child {
 }
 
 /* 2️⃣ إعادة فرض الألوان داخل بطاقات السيو */
-#seo-text .netflix-card-light h3 {
+#seo-text .stream-card-light h3 {
   color: #1f2937 !important;
   -webkit-text-fill-color: #1f2937 !important;
 }
 
-#seo-text .netflix-card-light p {
+#seo-text .stream-card-light p {
   color: #4b5563 !important;
   -webkit-text-fill-color: #4b5563 !important;
 }
@@ -1803,13 +1803,13 @@ section > *:last-child {
 }
 
 /* 2️⃣ نعيد تعريف الألوان يدوياً للبطاقات */
-#seo-text .netflix-card-light h3 {
+#seo-text .stream-card-light h3 {
   color: #1f2937 !important;
   -webkit-text-fill-color: #1f2937 !important;
   opacity: 1 !important;
 }
 
-#seo-text .netflix-card-light p {
+#seo-text .stream-card-light p {
   color: #4b5563 !important;
   -webkit-text-fill-color: #4b5563 !important;
   opacity: 1 !important;
