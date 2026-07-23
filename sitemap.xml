@@ -100,21 +100,21 @@
 
   <url>
     <loc>https://primeiptvplus.com/iptv-usa/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/iptv-uk/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/iptv-canada/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/iptv-canada/"/>
@@ -124,7 +124,7 @@
 
   <url>
     <loc>https://primeiptvplus.com/fr/iptv-france/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -138,7 +138,7 @@
 
   <url>
     <loc>https://primeiptvplus.com/fr/iptv-canada/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://primeiptvplus.com/iptv-canada/"/>
@@ -169,21 +169,21 @@
 
   <url>
     <loc>https://primeiptvplus.com/ar/iptv-morocco/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/ar/iptv-mashriq/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://primeiptvplus.com/ar/iptv-gulf/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
