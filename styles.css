@@ -1992,3 +1992,23 @@ div:has(> #price-val-pro)     span {
 /* ================================================
    ⭐ نهاية إصلاح عناوين الموبايل ⭐
    ================================================ */
+
+/* ===================================================
+   🧭 Language chip + menu button on the left
+   The flag marquee keeps the remaining space on the
+   right. Opening the dropdown from the left edge also
+   keeps it inside the viewport on narrow screens.
+=================================================== */
+#language-bar .lang-wrapper {
+  order: -1;
+  margin-right: 10px;
+}
+
+#flags-container {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+#header #menu-btn {
+  order: -1;
+}
