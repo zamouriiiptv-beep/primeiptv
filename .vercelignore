@@ -1,0 +1,5 @@
+# Internal documentation and build scripts must never be deployed to
+# the public site — they are not part of the site and must stay
+# invisible to visitors, crawlers, and any automated DMCA sweep tooling.
+*.md
+*.py

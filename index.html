@@ -104,24 +104,9 @@
     transition: transform .2s, background .2s;
   }
   .lang-btn:hover { background: rgba(255,255,255,0.16); transform: translateY(-2px); }
-  .lang-flag { font-size: 18px; line-height: 1; }
+  .lang-flag { width: 24px; height: 16px; border-radius: 3px; object-fit: cover; }
 </style>
 
-<script>
-window.addEventListener('load',function(){
-  setTimeout(function(){
-    var s=document.createElement('script');
-    s.src='https://www.googletagmanager.com/gtag/js?id=AW-18138909640';
-    s.async=true;document.head.appendChild(s);
-    window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag=gtag;
-    gtag('js',new Date());
-    gtag('config','AW-18138909640');
-    gtag('config','G-MYZJREE8MD');
-  },3000);
-});
-</script>
 </head>
 
 <body class="flex flex-col items-center justify-center min-h-screen px-4 text-white">
@@ -136,30 +121,13 @@ window.addEventListener('load',function(){
 
     <p class="text-gray-400 text-xs uppercase tracking-widest mb-4">Choose your language</p>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-      <a href="/eng/" class="lang-btn"><span class="lang-flag">🇬🇧</span>English</a>
-      <a href="/fra/" class="lang-btn"><span class="lang-flag">🇫🇷</span>Français</a>
-      <a href="/esp/" class="lang-btn"><span class="lang-flag">🇪🇸</span>Español</a>
+      <a href="/eng/" class="lang-btn"><img src="/images/flags/gb.svg" class="lang-flag" alt="English" loading="lazy">English</a>
+      <a href="/fra/" class="lang-btn"><img src="/images/flags/fr.svg" class="lang-flag" alt="Français" loading="lazy">Français</a>
+      <a href="/esp/" class="lang-btn"><img src="/images/flags/es.svg" class="lang-flag" alt="Español" loading="lazy">Español</a>
     </div>
   </div>
 
-  <a href="https://wa.me/212666686732?text=Hello%20Prime%20IPTV%2C%20I%20would%20like%20more%20information."
-     class="mt-8 flex items-center gap-3 bg-green-600 hover:bg-green-500 transition px-6 py-3 rounded-2xl text-white font-semibold shadow-lg">
-    <img width="64" height="64" src="/images/whatsapp.webp" alt="WhatsApp" class="w-7 h-7 rounded-full">
-    Contact us on WhatsApp
-  </a>
-
   <p class="mt-8 text-xs text-gray-600">© Prime IPTV – primeiptvplus.com</p>
 
-<script>
-document.addEventListener('click', function (e) {
-  var el = e.target;
-  if (!el || typeof el.closest !== 'function') return;
-  var link = el.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
-  if (!link) return;
-  if (typeof gtag === 'function') {
-    gtag('event', 'contact', { method: 'WhatsApp' });
-  }
-}, true);
-</script>
 </body>
 </html>
