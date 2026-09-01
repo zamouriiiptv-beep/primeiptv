@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<style>html{background:#050014}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 – Page Not Found | Prime IPTV</title>
+  <title>404 Error – Page Not Found | Prime IPTV</title>
+  <meta name="description" content="The page you're looking for cannot be found. It may have been moved or deleted. Return to the Prime IPTV homepage to continue.">
   <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="https://primeiptvplus.com/eng/">
+  <link rel="canonical" href="https://primeiptvplus.com/">
   <link rel="icon" href="/images/logo.webp" type="image/webp">
-  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <link rel="preload" href="/css/tailwind.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/tailwind.min.css"></noscript>
   <style>
     body {
       background: linear-gradient(135deg, #0a0a23 0%, #1a0a3c 50%, #0a1a40 100%);
@@ -43,42 +45,28 @@
       text-decoration: none;
     }
     .btn-secondary:hover { background: rgba(255,255,255,0.2); }
-    .flag-link {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 999px;
-      padding: 6px 16px;
-      font-size: 13px;
-      color: #e2e8f0;
-      text-decoration: none;
-      transition: background .2s;
-      white-space: nowrap;
-    }
-    .flag-link:hover { background: rgba(255,255,255,0.2); }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18138909640"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "AW-18138909640");
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MYZJREE8MD"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-MYZJREE8MD');
+window.addEventListener('load',function(){
+  setTimeout(function(){
+    var s=document.createElement('script');
+    s.src='https://www.googletagmanager.com/gtag/js?id=AW-18138909640';
+    s.async=true;document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','AW-18138909640');
+    gtag('config','G-MYZJREE8MD');
+  },3000);
+});
 </script>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen px-4 text-white">
 
   <!-- Logo -->
-  <a href="/eng/">
-    <img src="/images/logo.webp" alt="Prime IPTV Logo" class="w-20 h-20 rounded-full shadow-xl mb-6" loading="eager">
+  <a href="/">
+    <img width="80" height="80" src="/images/logo.webp" alt="Prime IPTV Logo" class="w-20 h-20 rounded-full shadow-xl mb-6" loading="eager">
   </a>
 
   <!-- 404 Card -->
@@ -87,11 +75,12 @@ gtag('config', 'G-MYZJREE8MD');
     <h1 class="text-2xl font-bold mb-3 text-white">Page Not Found</h1>
     <p class="text-gray-400 text-sm mb-8 leading-relaxed">
       The page you're looking for doesn't exist or has been moved.<br>
-      Let's get you back to streaming. 📺
+      Let's get you back on track. 📺
     </p>
 
     <div class="flex flex-wrap justify-center gap-3">
-      <a href="/eng/" class="btn-primary">🏠 Home</a>
+      <a href="/" class="btn-primary">🏠 Go Home</a>
+      <a href="/eng/" class="btn-secondary">English</a>
       <a href="/fra/" class="btn-secondary">Français</a>
       <a href="/esp/" class="btn-secondary">Español</a>
     </div>
@@ -100,28 +89,20 @@ gtag('config', 'G-MYZJREE8MD');
   <!-- WhatsApp CTA -->
   <a href="https://wa.me/212666686732?text=Hello%20Prime%20IPTV%2C%20I%20need%20help"
      class="mt-8 flex items-center gap-3 bg-green-600 hover:bg-green-500 transition px-6 py-3 rounded-2xl text-white font-semibold shadow-lg">
-    <img src="/images/whatsapp.webp" alt="WhatsApp" class="w-7 h-7 rounded-full">
+    <img width="64" height="64" src="/images/whatsapp.webp" alt="WhatsApp" class="w-7 h-7 rounded-full">
     Need help? Contact us on WhatsApp
   </a>
 
   <p class="mt-8 text-xs text-gray-600">© Prime IPTV – primeiptvplus.com</p>
 
-<!-- WhatsApp click tracking (GA4 event: contact) -->
 <script>
-console.log('[WA-TRACK] WhatsApp click listener attached (inline)');
 document.addEventListener('click', function (e) {
   var el = e.target;
   if (!el || typeof el.closest !== 'function') return;
   var link = el.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
   if (!link) return;
-  console.log('[WA-TRACK] WhatsApp link clicked:', link.href);
   if (typeof gtag === 'function') {
-    gtag('event', 'contact', {
-      method: 'WhatsApp'
-    });
-    console.log('[WA-TRACK] gtag event "contact" sent {method: WhatsApp}');
-  } else {
-    console.warn('[WA-TRACK] gtag NOT found - event "contact" NOT sent');
+    gtag('event', 'contact', { method: 'WhatsApp' });
   }
 }, true);
 </script>
