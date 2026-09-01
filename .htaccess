@@ -7,3 +7,11 @@
 
 Options -Indexes
 ErrorDocument 404 /404.html
+
+# ── Renamed pages ────────────────────────────────────────────
+# Only the three pages that moved. Anchored so they match the exact
+# old path and nothing underneath it. Every other removed page is
+# left to return a plain 404 with no forwarding destination.
+RedirectMatch 301 ^/home/?$           /eng/
+RedirectMatch 301 ^/fr/iptv-accueil/?$ /fra/
+RedirectMatch 301 ^/es/iptv-inicio/?$  /esp/

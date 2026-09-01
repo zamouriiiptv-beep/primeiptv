@@ -1,4 +1,9 @@
 {
   "trailingSlash": true,
-  "cleanUrls": false
+  "cleanUrls": false,
+  "redirects": [
+    { "source": "/home", "destination": "/eng", "permanent": true },
+    { "source": "/fr/iptv-accueil", "destination": "/fra", "permanent": true },
+    { "source": "/es/iptv-inicio", "destination": "/esp", "permanent": true }
+  ]
 }
