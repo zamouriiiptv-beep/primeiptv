@@ -952,7 +952,7 @@ a.button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: right;
+  text-align: left;
 
   transition: transform .25s ease, box-shadow .25s ease;
 }
@@ -1111,7 +1111,7 @@ a.button {
 =============================== */
 
 footer {
-  direction: rtl;
+  direction: ltr;
 }
 
 footer h3,
@@ -1119,7 +1119,7 @@ footer h4,
 footer p,
 footer ul,
 footer li {
-  text-align: right;
+  text-align: left;
 }
 
 
@@ -1267,7 +1267,7 @@ footer .border-t {
 
   font-family: 'Cairo', sans-serif;
   font-weight: 900;
-  direction: rtl; /* default RTL for AR pages */
+  direction: ltr; /* default RTL for AR pages */
 }
 
 /* LTR override: prevent RTL on EN / FR / ES pages */
@@ -1874,8 +1874,8 @@ section > *:last-child {
 /* 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 */
 /* 🧊 تثبيت اتجاه الهيدر وشريط اللغة في جميع اللغات */
 #header, #language-bar {
-  direction: rtl !important;
-  text-align: right !important;
+  direction: ltr !important;
+  text-align: left !important;
 }
 /* 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 */
 /* ⭐ نهاية كود تثبيت الهيدر ⭐ */

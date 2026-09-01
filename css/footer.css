@@ -4,7 +4,7 @@
 =============================== */
 
 footer {
-  direction: rtl;
+  direction: ltr;
 }
 
 footer h3,
@@ -12,7 +12,7 @@ footer h4,
 footer p,
 footer ul,
 footer li {
-  text-align: right;
+  text-align: left;
 }
 
 /* LTR override for EN / FR / ES pages */
