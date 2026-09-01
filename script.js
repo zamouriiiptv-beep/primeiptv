@@ -144,9 +144,9 @@ const currentFlag = document.getElementById("current-flag");
   const path = window.location.pathname;
   let lang = "en"; // default: root = English
 
-  if (path.startsWith("/fr/"))      lang = "fr";
-  else if (path.startsWith("/es/")) lang = "es";
-  // else: /home/ → en
+  if (path.startsWith("/fra/"))      lang = "fr";
+  else if (path.startsWith("/esp/")) lang = "es";
+  // else: /eng/ → en
 
   document.documentElement.lang = lang;
   localStorage.setItem("site_lang", lang);
@@ -189,7 +189,7 @@ document.querySelectorAll(".lang-option").forEach(option => {
 
     localStorage.setItem("site_lang", selectedLang);
 
-    const targets = { en: "/home/", fr: "/fr/iptv-accueil/", es: "/es/iptv-inicio/" };
+    const targets = { en: "/eng/", fr: "/fra/", es: "/esp/" };
     const target = targets[selectedLang] || "/";
 
     location.href = target;
